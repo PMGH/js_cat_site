@@ -19,6 +19,15 @@ var app = function(){
     return image;
   }
 
+  var appendElements = function(unorderedList, listElements, image){
+    listElements[2].appendChild(image);
+    unorderedList.appendChild(listElements);
+    var section = document.querySelector('#cats');
+    section.appendChild(unorderedList);
+  }
+
+  
+
 }
 
 window.onload = app;
