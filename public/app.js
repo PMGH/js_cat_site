@@ -12,6 +12,13 @@ var app = function(){
     return listElements;
   }
 
+  var createImage = function(src){
+    var image = document.createElement('img');
+    var width = "500";
+    image.innerHTML = "<img width = " + " src=" + src + " />";
+    return image;
+  }
+
 }
 
 window.onload = app;
