@@ -27,7 +27,11 @@ var app = function(){
 
   var appendElements = function(cat, unorderedList, listElements){
     listElements[0].innerText = "Name: " + cat.name;
+    listElements[0].classList.add("name");
+
     listElements[1].innerText = "Favourite Food: " + cat.fav_food;
+    listElements[1].classList.add("fav_food");
+
     var catImage = createImage(cat);
     listElements[2].appendChild(catImage);
 
