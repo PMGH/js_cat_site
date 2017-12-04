@@ -1,8 +1,55 @@
-.logo {
-  width: 50px;
-  height: 50px;
+* {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
-.red-quote{
-  color: red;
+body {
+  background-color: #E1EAF5;
+  color: #335C67;
+}
+
+h1 {
+  color: #4D0A0D;
+  font-size: 36px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0px 15%;
+}
+
+ul {
+  border-bottom: 2px solid lightGrey;
+  list-style: none;
+  margin: 3%;
+  text-align: center;
+  -webkit-padding-start: 0px;
+}
+
+ul:hover {
+  border-bottom: 2px solid #AE0327;
+  cursor: pointer;
+}
+
+li {
+  margin-top: 5%;
+}
+
+img {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px grey;
+  width: 175px;
+  height: 175px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.fav_food {
+  font-style: italic;
 }
