@@ -5,6 +5,13 @@ var app = function(){
     return unorderedList;
   }
 
+  var createListElements = function(){
+    for (var i = 0; i < 3; i++){
+      var listElement = document.createElement('li');
+    }
+    return listElements;
+  }
+
 }
 
 window.onload = app;
