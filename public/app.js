@@ -46,8 +46,18 @@ var app = function(){
     appendElements(cat, unorderedList, listElements);
   }
 
-  var cat = new Cat("Genie", "Salmon", "https://static.pexels.com/photos/20787/pexels-photo.jpg");
-  createCat(cat);
+  var cats = [
+    {name: "Snap", fav_food: "Tuna", image: "https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg"},
+    {name: "Genie", fav_food: "Salmon", image: "https://static.pexels.com/photos/20787/pexels-photo.jpg"},
+    {name: "Harry", fav_food: "Strawberries", image: "https://d1wn0q81ehzw6k.cloudfront.net/additional/thul/media/6f97ebf075cf8075?w=400&h=400"}
+  ]
+
+  for (var i = 0; i < cats.length; i++){
+    cat = cats[i];
+    var catName = "cat"+(i+1);
+    catName = new Cat(cat.name, cat.fav_food, cat.image);
+    createCat(catName);
+  }
 
 }
 
